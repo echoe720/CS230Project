@@ -1,11 +1,10 @@
 # CS230Project
-Milestone.zip contains all code used to parse the Gutenberg dataset into our final dataset, as well as the notebook for our baseline model.
-The notebook CountVectorizer Baseline.ipynb file loads the Gutenberg dataset, and then runs our baseline model on it. 
-There is commented out code that would change the baseline to use manual features instead.
-The other file contains our preliminary attempts at implementing a GRU/LSTM method.
+The repository is divided into four different folders.
 
-The C50parser.ipynb file parses the C50 dataset into format of sentence-to-authorName, 5-sentence-to-authorName, etc., depending on the number of sentences parameter you give it.
+The parsers/ folder contains all code used to parse the datasets. Some files were used to process texts into a set of training examples, and others were used to set the columns of those datasets into a format that could feed into our models. 
 
-Each of the file name indicates what each file does (e.g. lstm_gru_bilstm.ipynb contains the model with lstm, gru, bilstm networks)
+The data/ folder contains the datasets that we constructed. In particular, it contains example of sets with different size training examples, such as 1-sentence, 5-sentence, and 10-sentence.
 
-Note: Much of the Gutenberg datasets had to be either zipped or not included in this repository, due to their size. But using the Gutenberg parser, the larger datasets desired could be made simply by changing the number of sentences paramter.
+The graphs/ folder contains some of the graphs and plots that we produced, along with the files that were used to produce those graphs. Note that in the case of the graphs for the RNN architectures, these were produced by a file in the models/ folder.
+
+The models/ folder contains the three models we created in our project. There are two files for the ANN, as the different datasets required slightly different preprocessing. Note that the ANN and RNNs were used on multiple datasets, but the files in their current iterations are just examples of them being used on one dataset. Our manual feature baseline was also created in the same file as the ANN_Gutenberg. You can see commented out lines that were used to do this.
