@@ -4,5 +4,6 @@ The notebook CountVectorizer Baseline.ipynb file loads the Gutenberg dataset, an
 There is commented out code that would change the baseline to use manual features instead.
 The other file contains our preliminary attempts at implementing a GRU/LSTM method.
 
+The C50parser.ipynb file parses the C50 dataset into format of sentence-to-authorName, 5-sentence-to-authorName, etc., depending on the number of sentences parameter you give it.
 
 Much of the Gutenberg datasets had to be either zipped or not included in this repository, due to their size.
