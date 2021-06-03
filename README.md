@@ -3,7 +3,7 @@ The repository is divided into four different folders.
 
 The parsers/ folder contains all code used to parse the datasets. Some files were used to process texts into a set of training examples, and others were used to set the columns of those datasets into a format that could feed into our models. 
 
-The data/ folder contains the datasets that we constructed. In particular, it contains example of sets with different size training examples, such as 1-sentence, 5-sentence, and 10-sentence. For Gutenberg, some datasets we created were not included due to file size restrictions. They could be created by running the parser file.
+The datasets/ folder contains the datasets that we constructed. In particular, it contains example of sets with different size training examples, such as 1-sentence, 5-sentence, and 10-sentence. For Gutenberg, some datasets we created were not included due to file size restrictions. They could be created by running the parser file.
 
 The graphs/ folder contains some of the graphs and plots that we produced, along with the files that were used to produce those graphs. Note that in the case of the graphs for the RNN architectures, these were produced by a file in the models/ folder.
 
